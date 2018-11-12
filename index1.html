@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     @keyframes car{
+            from{
+                left: 10px;
+            }
+            to{
+                left:600px;
+            }
+        }
+        @keyframes wheel{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        } 
+        #road{
+            width: 100%;
+        }
+        #container{
+            position: relative;
+            animation: car 5s linear;
+            top: 52px;
+        }
+        #car{
+            position: relative;
+            width: 200px;
+            bottom:330px;
+        }
+        #wheel1{
+            position: relative;
+             width: 27px;
+            bottom: 341px;
+            right: 171px;
+            animation: wheel 1s linear;
+            animation-iteration-count: 5;
+        }
+        #wheel2{
+    position: relative;
+    width: 27px;
+    bottom: 342px;
+    right: 89px;
+    animation: wheel 1s linear;
+    animation-iteration-count: 5;
+        }
+    </style>
+</head>
+<body>
+<img src="./myroad.jpg" id="road">
+            <div id="container">
+                <img src="./my-car.png" id="car">
+                <img src="./wheel.png" id="wheel1">
+                <img src="./wheel.png" id="wheel2">
+            </div>
+   
+</body>
+</html>
